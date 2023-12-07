@@ -1,0 +1,182 @@
+/*----------------------
+Common CSS
+--------------------------*/
+* {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--Dark-03, #727272);
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 25px;
+    border: none;
+}
+
+/*---------------------
+Banner
+-----------------------------*/
+.banner-container {
+    width: auto;
+    height: 1205px;
+    background: rgba(255, 144, 14, 0.10);
+}
+
+/* Banner Header  */
+
+.nav-title {
+    color: var(--Dark-01, #131313);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 150px;
+
+    width: auto;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 70px;
+}
+
+/* Banner Title  */
+
+.banner-title {
+    width: 862px;
+    height: 225px;
+    margin: 0 auto;
+}
+
+.title {
+    color: var(--Dark-01, #131313);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+.description {
+    width: 868px;
+    height: 55px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.banner-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Banner Image  */
+.banner-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.image {
+    width: 1200px;
+    height: 600px;
+    border-radius: 8px;
+    background: url(<path-to-image>), lightgray 0px -94.291px / 100% 137.109% no-repeat;
+
+
+}
+
+/*-----------------------
+Our Features Banner
+-------------------------------*/
+.features-banner {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+
+}
+
+.features-banner img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    background: url(<path-to-image>), lightgray -147.882px 0px / 150.038% 100% no-repeat;
+}
+
+/* Our Features Banner Left  */
+.features-banner-left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Our Features Banner Right  */
+.features-banner-right {
+    position: relative;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features-banner-right-title {
+    font-size: 40px;
+    font-weight: 500;
+    width: 460px;
+    height: 100px;
+    margin-bottom: -5px;
+}
+
+.of-our {
+    color: var(--Dark-01, #131313);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.features {
+    color: #FF900E;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.features-banner-right-description {
+    width: 535px;
+    height: 92px;
+    margin-bottom: 65px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/*-------------------------
+Features love & enjoy
+--------------------------------*/
+/* Features love & enjoy Banner Left  */
+/* Features love & enjoy Banner Right  */
+/*---------------------------
+Some Facts
+--------------------------------*/
+/*-----------------------
+Our Sponsors
+--------------------------------*/
+/*---------------------------
+Footer
+---------------------------------*/
