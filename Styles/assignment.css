@@ -19,13 +19,13 @@ Common CSS
     border: none;
 }
 
+
 /*---------------------
 Banner
 -----------------------------*/
 .banner-container {
     width: auto;
     height: 1205px;
-    background: rgba(255, 144, 14, 0.10);
 }
 
 /* Banner Header  */
@@ -97,7 +97,7 @@ nav ul {
 
 .image {
     width: 1200px;
-    height: 600px;
+    height: 640px;
     border-radius: 8px;
     background: url(<path-to-image>), lightgray 0px -94.291px / 100% 137.109% no-repeat;
 
@@ -294,7 +294,6 @@ Some Facts
 /* Some Facts Blogs  */
 .some-facts-blogs {
     display: flex;
-    justify-content: center;
     gap: 75px;
     margin-top: 75px;
 }
@@ -365,7 +364,7 @@ Our Sponsors
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
 }
 
 .sponsors-icons {
@@ -373,17 +372,258 @@ Our Sponsors
     display: flex;
     justify-content: center;
     gap: 82px;
+
 }
-.sponsors{
+
+.sponsors {
     width: 150px;
     height: 50px;
+
 }
-.sponsors-img{
+
+.sponsors-img {
     width: 140px;
     height: 40px;
-    mix-blend-mode: luminosity;
+
+
 }
 
 /*---------------------------
 Footer
 ---------------------------------*/
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 90px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    margin-left: 147px;
+    align-items: center;
+    margin-top: 100px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.13);
+
+
+}
+
+.footer-description {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*------------------------------
+Responsive Section
+------------------------------------*/
+/*  Mobile Devices  */
+@media only screen and (max-width:688px) {
+    .banner-container {
+        width: 687px;
+    }
+
+    .banner-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav,
+    .nav-title {
+        display: flex;
+        margin: 0px 0px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 45px;
+    }
+
+
+    .description {
+        width: 687px;
+
+
+    }
+
+    .banner-title {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    .btn-primary {
+        margin-top: 25px;
+    }
+
+    .banner-image {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .banner-btn {
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+
+    }
+
+    .image,
+    .enjoy-banner-right-img {
+        width: 687px;
+        height: 700px;
+    }
+
+    .features-banner {
+        position: relative;
+        left: 155px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .features-banner-right {
+        margin-block-end: 50px;
+        margin-top: 25px;
+        left: auto;
+        align-items: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .features-banner-right-title,
+    .features-banner-right-description {
+        text-align: center;
+    }
+
+    .features-banner-right-title {
+        margin-bottom: auto;
+
+    }
+
+    .features-banner-left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .love-and-enjoy-container,
+    .some-facts,
+    .some-facts-blogs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .love-title-description,
+    .love-sub-title-description,
+    .features-love-title {
+        text-align: center;
+    }
+
+    .love-and-enjoy-banner-left {
+        margin-left: 35px;
+    }
+
+    .features-love-sub-title {
+        text-align: center;
+        width: auto;
+    }
+
+    .big-btn {
+        margin-top: 35px;
+        float: right;
+    }
+
+    .our-sponsors,
+    .sponsors-icons {
+        text-align: center;
+        display: grid;
+        justify-items: center;
+    }
+
+    .sponsors-description {
+        margin-left: 20px;
+    }
+
+    .footer {
+        margin-left: auto;
+        width: 687px;
+    }
+
+    .features-banner img {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+/*-----------------------------
+Responsive Section
+------------------------------------*/
+/* Tablet Devices  */
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .banner-container {
+        width: 100%;
+    }
+
+    .banner-image {
+        margin-left: 80px;
+        margin-top: 25px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .btn-primary {
+        margin-bottom: 25px;
+    }
+
+    .features-banner {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .features-banner-right {
+        left: 75px;
+        display: flex;
+        align-items: center;
+    }
+
+    .features-banner-left {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .love-and-enjoy-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .some-facts-blogs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sponsors-icons {
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        left: 40px;
+    }
+
+    .footer {
+        position: relative;
+        left: 40px;
+        width: auto;
+        margin-left: auto;
+    }
+}
